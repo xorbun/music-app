@@ -5,7 +5,7 @@ const initialState={
 }
 
 
-const music=(state=initialState, action)=>
+const Music=(state=initialState, action)=>
 {
     switch(action.type)
     {
@@ -19,4 +19,4 @@ const music=(state=initialState, action)=>
     
 }
 
-export default music
+export default Music

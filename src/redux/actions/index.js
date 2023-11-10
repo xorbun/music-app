@@ -28,7 +28,7 @@ export const Searchmusic=(artistName)=>
             })
             .then((data)=>
             {
-                console.log(data)
+                
                 dispatch({
                 type:OBTAIN_MUSIC,
                 payload:data,

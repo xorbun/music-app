@@ -11,13 +11,7 @@ const Menu=()=>
 
   const [Artistname,setArtistiname]=useState("")
   const dispatch=useDispatch()
-  const Artistifromredux=useSelector((state)=>
-  {
-    return state.content
-  })
-
-
-
+  
 
     return(
         <div className="col col-2">
