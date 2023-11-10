@@ -12,4 +12,4 @@ const Cardforartist=(props)=>
 
 }
 
-        export default Cardforartist        
+export default Cardforartist        
