@@ -31,10 +31,8 @@ const Homescreen=()=>
                 Artistifromredux.map((CoverA)=>
                 {
                     <Cardforartist props={CoverA}/>
+                    
                 })
-              
-                 
-               
               }
               
                </div>
