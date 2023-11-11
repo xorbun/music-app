@@ -1,8 +1,9 @@
-import { Card, CardBody } from "react-bootstrap"
+import { Card } from "react-bootstrap"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Cardforartist=(props)=>
+const Cardforartist=({props})=>
 {
- 
+    
     return (
         
         <Card style={{ width: '18rem' }} >
