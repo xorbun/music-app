@@ -31,7 +31,7 @@ export const Searchmusic=(artistName)=>
                 
                 dispatch({
                 type:OBTAIN_MUSIC,
-                payload:data,
+                payload:data.data,
             })
             })
             .catch((err)=>

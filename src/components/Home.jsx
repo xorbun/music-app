@@ -29,8 +29,10 @@ const Homescreen=()=>
                <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3">
                {Artistifromredux.length>0 &&
                 Artistifromredux.map((CoverA)=>
-                {
+                { 
+                  return(
                     <Cardforartist props={CoverA}/>
+                    )
                     
                 })
               }

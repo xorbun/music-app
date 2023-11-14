@@ -12,7 +12,7 @@ const Music=(state=initialState, action)=>
         case OBTAIN_MUSIC:
             return{
                 ...state,
-                content:[...state.content, action.payload]
+                content:[...state.content, ...action.payload]
             }
             default:return state
     }

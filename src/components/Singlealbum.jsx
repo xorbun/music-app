@@ -8,8 +8,8 @@ const Cardforartist=({props})=>
         
         <Card style={{ width: '18rem' }} >
         <Card.Body className='d-flex justify-content-center'>
-        <img src={props.data[0].album.cover} width="50%"/> 
-        {console.log("ciao")}
+        <img src={props.album.cover} width="50%"/> 
+        {console.log(props)}
         </Card.Body>
        
     </Card>
