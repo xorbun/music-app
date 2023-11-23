@@ -1,4 +1,5 @@
 export const OBTAIN_MUSIC="OBTAIN_MUSIC"
+export const OBTAIN_ONE_SONG="OBTAIN_ONE_SONG"
 
 export const Searchmusic=(artistName)=>
 {
@@ -40,3 +41,8 @@ export const Searchmusic=(artistName)=>
             })
     }
 }
+export const Onemusic=(data)=>({
+
+    type:OBTAIN_ONE_SONG,
+    payload:data,
+})

@@ -73,6 +73,7 @@ const Menu=()=>
                         {
                           e.preventDefault()
                           setArtistiname(e.target.value)
+                          
                         }}
 
                       />

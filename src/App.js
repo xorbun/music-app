@@ -1,4 +1,5 @@
 
+import Controller from './components/Controller';
 import Homescreen from './components/Home';
 import Menu from './components/Menu';
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
         <Menu/>
         <Homescreen/>
+        <Controller/>
     </div>
   );
 }
