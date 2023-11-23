@@ -3,21 +3,25 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState, } from "react";
 import { useDispatch } from "react-redux";
 import { Onemusic } from "../redux/actions";
-
+import { useSelector } from "react-redux/es/hooks/useSelector";
 const Cardforartist=(props)=>
 {
-    
+    const musicfromredux=useSelector((state)=>
+    {
+      return state.onlyone
+      
+    })
     const dispatch=useDispatch()
-    const [selected,setselected]=useState(false)
+    const [selected,setselected]=useState()
     
     const Selectedalbum=() =>
     {
-        setselected(!selected)
+         setselected(!selected)
     }
   
     return (
      <div className="mb-2"> 
-        <Card className={ selected ? 'border border-danger' :''} >
+        <Card className={props.utente.id===musicfromredux[0].id?'border border-danger p-4' :''}>
             <Card.Body className='d-flex'>
                 <img className="w-30"variant="top"src={props.utente.album.cover} 
                     alt="coverAlbum" 
@@ -26,7 +30,7 @@ const Cardforartist=(props)=>
                     {
                         Selectedalbum()
                         e.preventDefault()
-                        console.log(props.utente)
+                        
                         dispatch(Onemusic(props.utente))
                         
                     } 

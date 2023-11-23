@@ -1,15 +1,19 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useSelector } from 'react-redux/es/hooks/useSelector'
 import Cardforartist from './Singlealbum'
+import { useState } from 'react'
+
 const Homescreen=()=>
 {
+  
 
+  
     const Artistifromredux=useSelector((state)=>
     {
       return state.content
       
     })
-  
+    
     return(
             // console.log(Artistifromredux)
          <div className="col-12 col-md-9 offset-md-3 mainPage">
@@ -31,7 +35,10 @@ const Homescreen=()=>
                 Artistifromredux.map((CoverA)=>
                 { 
                   return(
-                    <Cardforartist utente={CoverA}/>
+                    <>
+                   
+                    <Cardforartist utente={CoverA} />
+                    </>
                     )
                     
                 })
