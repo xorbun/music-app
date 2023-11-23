@@ -29,7 +29,6 @@ export const Searchmusic=(artistName)=>
             })
             .then((data)=>
             {
-                
                 dispatch({
                 type:OBTAIN_MUSIC,
                 payload:data.data,
@@ -42,7 +41,6 @@ export const Searchmusic=(artistName)=>
     }
 }
 export const Onemusic=(data)=>({
-
     type:OBTAIN_ONE_SONG,
     payload:data,
 })

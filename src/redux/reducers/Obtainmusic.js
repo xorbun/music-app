@@ -5,7 +5,6 @@ const initialState={
     onlyone:[]
 }
 
-
 const Music=(state=initialState, action)=>
 {
     switch(action.type)
@@ -22,7 +21,6 @@ const Music=(state=initialState, action)=>
                 onlyone:[ action.payload]
             }
     }
-    
 }
 
 export default Music

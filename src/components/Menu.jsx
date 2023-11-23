@@ -5,15 +5,11 @@ import { useDispatch,useSelector } from 'react-redux'
 import { Searchmusic } from '../redux/actions'
 import { useState } from 'react'
 
-
 const Menu=()=>
 {
-
   const [Artistname,setArtistiname]=useState("")
   const dispatch=useDispatch()
-  
-
-    return(
+  return(
         <div className="col col-2">
         <nav
           className="navbar navbar-expand-md fixed-left justify-content-between"
@@ -73,9 +69,7 @@ const Menu=()=>
                         {
                           e.preventDefault()
                           setArtistiname(e.target.value)
-                          
                         }}
-
                       />
                       <div className="input-group-append">
                         <button

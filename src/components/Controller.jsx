@@ -8,19 +8,15 @@ const Controller=()=>
      const musicfromredux=useSelector((state)=>
     {
       return state.onlyone
-      
     })
     return(
-        
         <div className="container-fluid fixed-bottom bg-container pt-1">
       <div className="row h-75">
         <div className="col-lg-10 offset-lg-2">
           <div
             className="row h-75 flex-column justify-content-center align-items-center"
           >
-           
-            
-  );
+   );
         <Row>
             <div className='col-5 d-flex flex-column mt-2'fluid>
                 {musicfromredux.length>0 &&

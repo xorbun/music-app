@@ -4,12 +4,12 @@ import { useState, } from "react";
 import { useDispatch } from "react-redux";
 import { Onemusic } from "../redux/actions";
 import { useSelector } from "react-redux/es/hooks/useSelector";
+
 const Cardforartist=(props)=>
 {
     const musicfromredux=useSelector((state)=>
     {
       return state.onlyone
-      
     })
     const dispatch=useDispatch()
     const [selected,setselected]=useState()
@@ -18,7 +18,6 @@ const Cardforartist=(props)=>
     {
          setselected(!selected)
     }
-  
     return (
      <div className="mb-2"> 
         <Card className={props.utente.id===musicfromredux[0].id?'border border-danger p-4' :''}>
@@ -30,9 +29,7 @@ const Cardforartist=(props)=>
                     {
                         Selectedalbum()
                         e.preventDefault()
-                        
                         dispatch(Onemusic(props.utente))
-                        
                     } 
                 }/>
             </Card.Body>
@@ -40,8 +37,5 @@ const Cardforartist=(props)=>
         </Card>
     </div>  
     )
-    
-
 }
-
 export default Cardforartist        
